@@ -1,0 +1,353 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CDE6A556-F4AF-4675-8E2E-F9F774F7FBB4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>仿windows10电脑</RootNamespace>
+    <AssemblyName>仿windows10电脑</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>487gv-y9q21-001.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="IrisSkin4">
+      <HintPath>..\..\..\Downloads\窗体皮肤\窗体皮肤\IrisSkin4.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Boot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Boot.Designer.cs">
+      <DependentUpon>Boot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Diskinfo.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="install on disk\diskinstall1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="install on disk\diskinstall1.Designer.cs">
+      <DependentUpon>diskinstall1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="install on disk\diskinstall2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="install on disk\diskinstall2.Designer.cs">
+      <DependentUpon>diskinstall2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="install on disk\diskinstall3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="install on disk\diskinstall3.Designer.cs">
+      <DependentUpon>diskinstall3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="install on disk\diskinstall4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="install on disk\diskinstall4.Designer.cs">
+      <DependentUpon>diskinstall4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="system\blue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="system\blue.Designer.cs">
+      <DependentUpon>blue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="system\lijilongnoaq.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="system\lijilongnoaq.Designer.cs">
+      <DependentUpon>lijilongnoaq.cs</DependentUpon>
+    </Compile>
+    <Compile Include="system\lock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="system\lock.Designer.cs">
+      <DependentUpon>lock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="system\systemdown.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="system\systemdown.Designer.cs">
+      <DependentUpon>systemdown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="system\sz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="system\sz.Designer.cs">
+      <DependentUpon>sz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="system\thisPC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="system\thisPC.Designer.cs">
+      <DependentUpon>thisPC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="system\wec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="system\wec.Designer.cs">
+      <DependentUpon>wec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="system\zm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="system\zm.Designer.cs">
+      <DependentUpon>zm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="systeninfo.cs" />
+    <Compile Include="widowsinstall1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="widowsinstall1.Designer.cs">
+      <DependentUpon>widowsinstall1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="windowsinstall.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="windowsinstall.Designer.cs">
+      <DependentUpon>windowsinstall.cs</DependentUpon>
+    </Compile>
+    <Compile Include="windowsinstall2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="windowsinstall2.Designer.cs">
+      <DependentUpon>windowsinstall2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="windowsinstall3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="windowsinstall3.Designer.cs">
+      <DependentUpon>windowsinstall3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="windowsinstall4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="windowsinstall4.Designer.cs">
+      <DependentUpon>windowsinstall4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="windowsinstall5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="windowsinstall5.Designer.cs">
+      <DependentUpon>windowsinstall5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="windowsinstall6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="windowsinstall6.Designer.cs">
+      <DependentUpon>windowsinstall6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="windowsinstall7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="windowsinstall7.Designer.cs">
+      <DependentUpon>windowsinstall7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="windowsinstall8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="windowsinstall8.Designer.cs">
+      <DependentUpon>windowsinstall8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="windowsinstall9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="windowsinstall9.Designer.cs">
+      <DependentUpon>windowsinstall9.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Boot.resx">
+      <DependentUpon>Boot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="install on disk\diskinstall1.resx">
+      <DependentUpon>diskinstall1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="install on disk\diskinstall2.resx">
+      <DependentUpon>diskinstall2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="install on disk\diskinstall3.resx">
+      <DependentUpon>diskinstall3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="install on disk\diskinstall4.resx">
+      <DependentUpon>diskinstall4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="system\blue.resx">
+      <DependentUpon>blue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="system\lijilongnoaq.resx">
+      <DependentUpon>lijilongnoaq.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="system\lock.resx">
+      <DependentUpon>lock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="system\systemdown.resx">
+      <DependentUpon>systemdown.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="system\sz.resx">
+      <DependentUpon>sz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="system\thisPC.resx">
+      <DependentUpon>thisPC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="system\wec.resx">
+      <DependentUpon>wec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="system\zm.resx">
+      <DependentUpon>zm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="widowsinstall1.resx">
+      <DependentUpon>widowsinstall1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="windowsinstall.resx">
+      <DependentUpon>windowsinstall.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="windowsinstall2.resx">
+      <DependentUpon>windowsinstall2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="windowsinstall3.resx">
+      <DependentUpon>windowsinstall3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="windowsinstall4.resx">
+      <DependentUpon>windowsinstall4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="windowsinstall5.resx">
+      <DependentUpon>windowsinstall5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="windowsinstall6.resx">
+      <DependentUpon>windowsinstall6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="windowsinstall7.resx">
+      <DependentUpon>windowsinstall7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="windowsinstall8.resx">
+      <DependentUpon>windowsinstall8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="windowsinstall9.resx">
+      <DependentUpon>windowsinstall9.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\捕获61.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\捕获62.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\002.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\003.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\004.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\005.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\006.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QQ20250111-223154.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP-C %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP-C %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QQ20250114-082716.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DefaultAccountTile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\game-icons_pc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\material-symbols_shield.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\37A9BE12093F6146EDFD3FB0CCE18437.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\material-symbols_settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="487gv-y9q21-001.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
