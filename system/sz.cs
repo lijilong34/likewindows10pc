@@ -27,8 +27,8 @@ namespace 仿windows10电脑.system
             else
             {
                 labzt.Text = "已激活";
-                label8.Visible = false;
-                labzt.Visible = false;
+                label7.Visible = false;
+                txtjhm.Visible = false;
             }
             txtName.Text = systeninfo.Name;
             txtUesr.Text = systeninfo.User;
